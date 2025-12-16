@@ -1,20 +1,22 @@
 public class MyInteger {
-    double newint;
-    boolean even;
+    static double newint;
+
 MyInteger(int MyInt){
     newint = MyInt;
 }
 
-int isEven() {
-if newint % 2 == 0;{
-    return 0;
-} else {
-    return 1;
+static boolean isEven() {
+if (newint % 2 == 0);{
+    return true;
+} 
 }
-}
-int isOdd() {
 
+static boolean isOdd() {
+    if (newint % 2 != 0);{
+    return true;
+} 
 }
+
 int isPrime() {
     
 }
