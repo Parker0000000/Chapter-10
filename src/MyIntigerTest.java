@@ -5,18 +5,13 @@ public class MyIntigerTest {
         int MyInt = 0;
 
         Scanner input = new Scanner(System.in);
-        MyInt = 1 % 2;
+        MyInt = 5;
         System.out.println(MyInt);
         MyInteger integer = new MyInteger(MyInt);
-        if (MyInteger.isEven() == true) {
-        System.out.println(MyInt + " Is even");
-        } else {
-            System.out.println(MyInt + " Is not even");
-        }
-        if (MyInteger.isOdd() == true) {
-        System.out.println(MyInt + " Is not odd");
-        } else {
-            System.out.println(MyInt + " Is odd");
+        System.out.println(integer.isEven());
+        //System.out.println(integer.isOdd());
+        if (MyInt % 2 == 0) {
+            System.out.println("yes");
         }
         
         

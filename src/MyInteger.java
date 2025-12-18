@@ -1,23 +1,24 @@
 public class MyInteger {
-    static double newint;
+     int newint;
 
 MyInteger(int MyInt){
     newint = MyInt;
 }
 
-static boolean isEven() {
-if (newint % 2 == 0);{
-    return true;
-} 
+ int isEven() {
+    newint = newint % 2;
+if (newint == 0);{
+    return /*"The integer is even"*/ newint;
+}  
 }
 
-static boolean isOdd() {
+ /*String isOdd() {
     if (newint % 2 != 0);{
-    return true;
+    return "The integer is odd";
 } 
-}
+}*/
 
-int isPrime() {
+//int isPrime() {
     
-}
+//}
 }
