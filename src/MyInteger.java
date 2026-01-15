@@ -5,18 +5,14 @@ MyInteger(int MyInt){
     newint = MyInt;
 }
 
- int isEven() {
-    newint = newint % 2;
-if (newint == 0);{
-    return /*"The integer is even"*/ newint;
-}  
+ String isEven() {
+if (newint % 2 == 0){
+    return "The integer is even";
+}  else {
+    return "The integer is odd";
+}
 }
 
- /*String isOdd() {
-    if (newint % 2 != 0);{
-    return "The integer is odd";
-} 
-}*/
 
 //int isPrime() {
     
