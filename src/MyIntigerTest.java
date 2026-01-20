@@ -5,14 +5,14 @@ public class MyIntigerTest {
         int MyInt = 0;
 
         Scanner input = new Scanner(System.in);
-        MyInt = 4;
+        MyInt = 41;
         System.out.println(MyInt);
         MyInteger integer = new MyInteger(MyInt);
         System.out.println(integer.isEven());
         if (MyInt % 2 == 0) {
             System.out.println("yes");
         } else { 
-            System.out.println("hello");
+            System.out.println(MyInt % 5);
         }
         
         
