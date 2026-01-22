@@ -2,18 +2,18 @@ import java.util.Scanner;
 
 public class MyIntigerTest {
     public static void main(String[] args) throws Exception {
-        int MyInt = 0;
+        int MyInt;
 
         Scanner input = new Scanner(System.in);
-        MyInt = 41;
+        MyInt = input.nextInt();
         System.out.println(MyInt);
         MyInteger integer = new MyInteger(MyInt);
+        System.out.print("Is " + MyInt + " even: ");
         System.out.println(integer.isEven());
-        if (MyInt % 2 == 0) {
-            System.out.println("yes");
-        } else { 
-            System.out.println(MyInt % 5);
-        }
+        System.out.print("Is " + MyInt + " odd: ");
+        System.out.println(integer.isOdd());
+        System.out.print("Is " + MyInt + " prime: ");
+        System.out.println(integer.isPrime());
         
         
     }
