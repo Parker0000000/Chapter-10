@@ -1,6 +1,6 @@
 public class MyInteger {
      int newint;
-MyInteger vlaue = 0;
+
 MyInteger(int MyInt){
     newint = MyInt;
     
@@ -54,6 +54,14 @@ static String isPrime(int newint) {
     return "";
 }
 
+//Equals code
+String equals(int newint) {
+    if (newint == 8) {
+        return "The integer is equal";
+    }
+    return "";
+}
+
 //MyInteger clauses
 static String isEven(MyInteger vlaue) {
     
@@ -68,11 +76,9 @@ static String isPrime(MyInteger vlaue) {
     return isPrime(vlaue.value);
 }
 
-//Equals code
 String equals(MyInteger vlaue) {
-    if (newint == vlaue.value) {
-        return "the integer is equal";
-    }
-    return "";
+    return equals(vlaue.value);
 }
+
+
 }
