@@ -1,8 +1,17 @@
 public class MyInteger {
      int newint;
+     
+     String againwhy;
+     int h;
+     char[] hello = new char [h];
+     int q;
 
-MyInteger(int MyInt){
+MyInteger(int MyInt, int i, String why, int thisone, char[] hi){
     newint = MyInt;
+    h = i;
+    q = thisone;
+    why = againwhy;
+    hi = hello;
     
 }
 //Normal code
@@ -20,8 +29,11 @@ String isPrime() {
    return isPrime(newint);
 }
 
-
-
+char parseint() {
+    for (int u; u < h; u++) {
+        return isEven(hello[u]);
+    }
+}
 
 //static ints
 static String isEven(int newint) {
@@ -44,8 +56,8 @@ static String isPrime(int newint) {
         return "The integer is not prime";
     }
  
-    for (int i = 2; i <= Math.sqrt(newint); i++) {
-        if (newint % i == 0) {
+    for (int ppp = 2; ppp <= Math.sqrt(newint); ppp++) {
+        if (newint % ppp == 0) {
             return "The integer is not prime";
         } else {
             return "The integer is prime";
@@ -56,10 +68,7 @@ static String isPrime(int newint) {
 
 //Equals code
 String equals(int newint) {
-    if (newint == 8) {
         return "The integer is equal";
-    }
-    return "";
 }
 
 //MyInteger clauses
