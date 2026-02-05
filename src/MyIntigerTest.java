@@ -6,7 +6,7 @@ public class MyIntigerTest {
         int thisone = 0;
         String why = "0";
         int i = 0;
-        char[] hi = new char[i];
+        char[] hi = new char[100];
         
         Scanner input = new Scanner(System.in);
         System.out.println("Enter how you will enter your info: ");
@@ -22,21 +22,22 @@ public class MyIntigerTest {
             hi = new char[i];
             for (int w = 0; w < i; w++) {
                 hi[w] = input.next().charAt(0);
-                
             }
-            
-            
         }else {
             System.out.println("Enter string");
-            why = input.nextLine();
+            why = input.next();
         }
         
-        MyInteger integer = new MyInteger(MyInt, i, why, thisone, hi);
-        System.out.println(integer.isEven());
-        System.out.println(integer.isOdd());
-        System.out.println(integer.isPrime());
-        System.out.println(integer.equals(MyInt));
-        System.out.println(integer.parseint());
-        
+    MyInteger integer = new MyInteger(MyInt, i, why, thisone, hi);
+        if (thisone == 1) {
+            System.out.println(integer.isEven());
+            System.out.println(integer.isOdd());
+            System.out.println(integer.isPrime());
+            System.out.println(integer.equals(MyInt));
+        } else if (thisone == 2) {
+            System.out.println(integer.parseint(hi));
+        } else {
+            System.out.println(integer.parsestring(why));
+        }
     }
 }

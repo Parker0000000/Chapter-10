@@ -5,13 +5,14 @@ public class MyInteger {
      int h;
      char[] hello = new char [h];
      int q;
+     int value;
 
 MyInteger(int MyInt, int i, String why, int thisone, char[] hi){
     newint = MyInt;
     h = i;
     q = thisone;
     why = againwhy;
-    hi = hello;
+    hi = new char[100];
     
 }
 //Normal code
@@ -29,10 +30,17 @@ String isPrime() {
    return isPrime(newint);
 }
 
-char parseint() {
-    for (int u; u < h; u++) {
-        return isEven(hello[u]);
+int parseint(char[] hi) {
+    int total = 0;
+    for (int u = 0; u < h; u++) {
+        total += hi[u];
     }
+    return total;
+}
+
+int parsestring(String why) {
+    int number = Integer.parseInt(why);
+    return number;
 }
 
 //static ints
