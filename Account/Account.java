@@ -15,6 +15,9 @@ public class Account {
     int year = date.getYear();
     int month = date.getMonthValue();
     int day = date.getDayOfMonth();
+    double d = 0;
+    int answer = 0;
+
 
     Account() {
         ID = 0;
@@ -23,23 +26,32 @@ public class Account {
         datecreated = currentDate;
     }
 
-    Account(int newID, double newbalance, double newintrest, double withdraw, double deposit, double newdate, double[] w) {
+    Account(int newID, double newbalance, double newintrest, double withdraw, double deposit, double newdate, int jh) {
         ID = newID;
+        newamount = 0;
         balance = newbalance;
         annualinterestrate = newintrest;
         newamount = withdraw;
         newasdf = deposit;
         days = newdate;
-        double[] idbalance = new double[9];
+        answer = jh;
+        
+        double[] idbalance = new double[100];
         for (int q = 0; q <= 9; q++) {
             
-            idbalance[ID] = 100;
-            ID++;
+            idbalance[q] = 100;
+            
         }
+        d = idbalance[ID];
+        if (answer == 0) {
+            d = Withdraw();
+        } else {
+            d = Deposit();
+        }
+        
     }
-    double d() {
-
-        return 0;
+    double normal() {
+        return Deposit();
     }
 
     int ID() {
@@ -52,10 +64,10 @@ public class Account {
         return balance * (days * getmonthlyintrestrate());
     }
     double Withdraw() {
-        return idbalance[ID] - newamount; 
+        return d - newamount; 
     }
     double Deposit() {
-        return balance + newasdf;
+        return d + newasdf;
     }
     String datecreated() {
         return day + "/" + month + "/" + year;
