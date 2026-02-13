@@ -17,6 +17,7 @@ public class Account {
     int day = date.getDayOfMonth();
     double d = 0;
     int answer = 0;
+    Double nfg = 0.0;
 
 
     Account() {
@@ -43,11 +44,7 @@ public class Account {
             
         }
         d = idbalance[ID];
-        if (answer == 0) {
-            d = Withdraw();
-        } else {
-            d = Deposit();
-        }
+        
         
     }
     double normal() {
