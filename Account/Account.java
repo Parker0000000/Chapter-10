@@ -15,9 +15,11 @@ public class Account {
     int year = date.getYear();
     int month = date.getMonthValue();
     int day = date.getDayOfMonth();
-    double d = 0;
     int answer = 0;
+    double d = 0;
     Double nfg = 0.0;
+    
+    
 
 
     Account() {
@@ -25,25 +27,25 @@ public class Account {
         balance =0;
         annualinterestrate = 0;
         datecreated = currentDate;
+        
     }
 
     Account(int newID, double newbalance, double newintrest, double withdraw, double deposit, double newdate, int jh) {
-        ID = newID;
-        newamount = 0;
-        balance = newbalance;
-        annualinterestrate = newintrest;
-        newamount = withdraw;
-        newasdf = deposit;
-        days = newdate;
-        answer = jh;
-        
+        this.ID = newID;
+        this.newamount = 0;
+        this.balance = newbalance;
+        this.annualinterestrate = newintrest;
+        this.newamount = withdraw;
+        this.newasdf = deposit;
+        this.days = newdate;
+        this.answer = jh;
         double[] idbalance = new double[100];
-        for (int q = 0; q <= 9; q++) {
-            
+        for (int q = 0; q < 100; q++) {
             idbalance[q] = 100;
-            
         }
-        d = idbalance[ID];
+        this.d = idbalance[ID];
+        
+        
         
         
     }
@@ -61,7 +63,7 @@ public class Account {
         return balance * (days * getmonthlyintrestrate());
     }
     double Withdraw() {
-        return d - newamount; 
+        return d - newamount;
     }
     double Deposit() {
         return d + newasdf;

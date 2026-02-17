@@ -28,8 +28,10 @@ public class ATM {
         }
         Account atm = new Account(newID, newbalance, newintrest, withdraw, deposit, newdate, jh);
         if (kj == 1) {
+            System.out.println("Amount in account");
             System.out.println(atm.Deposit());
         } else if (kj == 2) {
+            System.out.println("Amount in account");
             System.out.println(atm.Withdraw());
         }
         }
